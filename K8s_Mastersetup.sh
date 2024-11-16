@@ -51,11 +51,11 @@ sudo systemctl enable containerd
 # rm -f crictl.tar.gz
 
 # Verify CRI is correctly configured
-echo "Verifying CRI configuration with crictl..."
-if ! sudo crictl info; then
-    echo "CRI configuration failed. Please check containerd setup."
-    exit 1
-fi
+# echo "Verifying CRI configuration with crictl..."
+# if ! sudo crictl info; then
+    # echo "CRI configuration failed. Please check containerd setup."
+    # exit 1
+# fi
 
 # Install kubeadm, kubelet, and kubectl
 echo "Installing kubeadm, kubelet, kubectl..."
